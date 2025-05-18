@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2b3990; /* Dark blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 40px;
+  color: white;
+  border-radius: 0;
+}
+
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.support-btn {
+  background-color: #f4a04b;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("images/Worlds_Vex_Image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensures the blur effect doesn't overflow */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Use the same background image */
+  background-size: inherit;
+  background-position: inherit;
+  filter: blur(2px); /* Apply the blur effect */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Ensures the content stays above the blurred background */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.dropin-btn {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #f4a04b;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ...existing code... */
+.sections-row {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 98vw;      /* Nearly full width */
+  margin: 50px auto 0 auto;
+  padding: 0 1vw;       /* Minimal space on the edges */
+}
+
+.section-block {
+  display: flex;
+  align-items: center;
+  gap: 56px;             /* More gap for bigger photos */
+  background: #f7f7f7;
+  border-radius: 14px;
+  padding: 56px 40px;    /* More padding for a larger block */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.section-photo {
+  width: 400px;          /* Much wider */
+  height: 260px;         /* Much taller */
+  background: #111;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;     /* Larger font */
+}
+/* ...existing code... */
+
+.section-content {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.bottom-feature {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  background: #f7f7f7;
+  border-radius: 18px;
+  padding: 72px 4vw;
+  margin: 64px auto 0 auto;
+  max-width: 96vw;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+
+/* ...existing code... */
+.bottom-photo {
+  width: 500px;           /* Increased width */
+  height: 720px;          /* Increased height */
+  background: #111;
+  border-radius: 24px;    /* Larger, more prominent rounded corners */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;       /* Ensures image corners are rounded */
+}
+/* ...existing code... */
+
+.bottom-content {
+  flex: 1;
+}
+
+.bottom-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.bottom-text {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
